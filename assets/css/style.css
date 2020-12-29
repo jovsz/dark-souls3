@@ -7,6 +7,10 @@ body {
     background-color: black;
 }
 
+.hide {
+    display: none;
+}
+
 .nav {
     padding: 10px;
     background-color: black;
@@ -32,12 +36,11 @@ button {
 }
 
 #menu {
-    display: flex;
-    flex-direction: column;
+    position: fixed;
     background-color: black;
     border: solid #fff;
     width: 400px;
-    height: 100%;
+    height: 90vh;
 }
 
 li {
@@ -46,8 +49,26 @@ li {
 
 #menu img {
     background-size: cover;
+    width: 100%;
 }
 
-#menu .hide {
-    display: none;
+#menu-bosses button {
+    color: #fff;
+}
+
+#boss-main {
+    color: white;
+}
+
+#boss-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boss-main img {
+    background-size: cover;
+    height: 400px;
+    width: 500px;
 }
