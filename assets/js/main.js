@@ -266,7 +266,6 @@ function printBoss() {
     bosses.forEach((boss) => {
         html += `<li><button onclick="printBossDetail(${boss.id-1})">${boss.name}</a></li>`;
     });
-
     container.innerHTML = html;
 }
 
@@ -297,11 +296,6 @@ function printBossDetail(id) {
             <p>${bosses[id].drops} : ${bosses[id].itemDetail}</p>
                         
     `;
-
     container.innerHTML = html;
-
 }
-
-showMenu();
 printBoss();
-printBossDetail();
